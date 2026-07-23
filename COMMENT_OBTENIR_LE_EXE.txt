@@ -1,0 +1,74 @@
+COMMENT OBTENIR GestionEquipes.exe — SANS RIEN INSTALLER
+===========================================================
+Cette méthode ne demande AUCUN droit admin et n'installe RIEN sur votre
+ordinateur (ni Python, ni autre chose). Tout se passe dans votre
+navigateur web ; c'est GitHub (gratuit) qui construit le .exe pour vous,
+sur ses propres serveurs Windows.
+
+Il vous faut juste : un navigateur internet et 10 minutes.
+
+
+ÉTAPE 1 — Créer un compte GitHub (gratuit)
+-------------------------------------------
+1. Allez sur https://github.com/signup
+2. Créez un compte avec votre adresse e-mail (aucune carte bancaire,
+   aucune installation).
+
+
+ÉTAPE 2 — Créer un nouveau "dépôt" (repository)
+-------------------------------------------------
+1. Une fois connecté, cliquez sur le "+" en haut à droite, puis
+   "New repository".
+2. Donnez-lui un nom, par exemple : GestionEquipes
+3. Laissez-le "Public" (ou "Private" si vous préférez, ça marche pareil).
+4. Cliquez "Create repository". NE cochez PAS "Add a README" (pas grave
+   si vous l'avez déjà fait).
+
+
+ÉTAPE 3 — Déposer les fichiers du projet
+-------------------------------------------
+1. Sur la page de votre nouveau dépôt, cliquez sur le lien
+   "uploading an existing file" (ou "Add file" > "Upload files").
+2. Ouvrez sur votre ordinateur le dossier "GestionEquipes" que je vous
+   ai fourni (celui qui contient app.py, requirements.txt, et le
+   sous-dossier caché ".github").
+3. Glissez-déposez TOUS les fichiers et dossiers (y compris le dossier
+   ".github" — s'il ne s'affiche pas dans l'explorateur de fichiers,
+   activez l'affichage des fichiers/dossiers cachés) dans la zone
+   de dépôt du site GitHub.
+   Astuce : si votre explorateur de fichiers masque ".github", glissez
+   d'abord tout le reste, puis revenez et ajoutez ".github/workflows/
+   build.yml" séparément via "Add file" > "Create new file" en tapant
+   ce chemin exact comme nom de fichier et en collant son contenu
+   (je peux vous le redonner si besoin).
+4. En bas de page, cliquez "Commit changes" (bouton vert).
+
+
+ÉTAPE 4 — Laisser GitHub construire le .exe
+-----------------------------------------------
+1. Cliquez sur l'onglet "Actions" en haut du dépôt.
+2. Vous devriez voir une construction en cours (un rond jaune/orange qui
+   tourne), nommée "Construire GestionEquipes.exe". Si rien ne démarre
+   automatiquement, cliquez dessus dans la liste à gauche puis sur le
+   bouton "Run workflow".
+3. Patientez 2 à 3 minutes. Le rond devient une coche verte ✓ quand
+   c'est terminé.
+
+
+ÉTAPE 5 — Télécharger le .exe fini
+--------------------------------------
+1. Cliquez sur la construction terminée (celle avec la coche verte).
+2. Tout en bas de la page, dans la section "Artifacts", cliquez sur
+   "GestionEquipes-exe" pour le télécharger (fichier .zip).
+3. Décompressez ce .zip : vous obtenez "GestionEquipes.exe".
+
+C'est votre application, prête à l'emploi. Copiez-la où vous voulez
+(Bureau, clé USB, session serveur, etc.) : elle n'a besoin ni de
+Python, ni de droits admin, ni d'internet pour fonctionner.
+
+
+BESOIN D'AIDE ?
+-----------------
+Si une étape bloque (message d'erreur, bouton introuvable), dites-moi
+exactement où vous en êtes et ce que vous voyez à l'écran, je vous
+guiderai.
